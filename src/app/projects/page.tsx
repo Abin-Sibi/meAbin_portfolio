@@ -65,7 +65,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
 
   return (
-    <><section className=" py-16 my-20 px-8">
+    <><section className=" py-16 my-20 sm:px-5 md:px-16 lg:px-24 xl:px-24 px-5">
       <div className="container mx-auto">
         <h2 className="text-4xl text-white text-center mb-12 font-bold">My Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

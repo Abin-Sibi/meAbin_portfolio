@@ -54,7 +54,7 @@ const ProjectList = () => {
   ];
 
   return (
-    <section className="my-20 px-0 lg:px-28 sm:px-0">
+    <section className="my-20 px-0 max-w-6xl  sm:px-0">
       <div className="container mx-auto">
         <h2 className="text-4xl text-white text-center mb-12 font-bold">My Projects</h2>
         <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -63,7 +63,7 @@ const ProjectList = () => {
               key={index}
               onClick={() => setSelectedProject(project)}
               ref={(el) => (refs.current[index] = el)} // Assign ref to each project card
-              className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl cursor-pointer transform border-2 border-purple-400 hover:border-purple-800"
+              className="bg-gray-800 p-6 rounded-lg  mx-auto shadow-lg hover:shadow-2xl cursor-pointer transform border-2 border-purple-400 hover:border-purple-800"
             >
               <project.icon className="text-purple-500 text-4xl mb-4" />
               <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>

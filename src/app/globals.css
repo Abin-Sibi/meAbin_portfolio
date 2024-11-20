@@ -17,7 +17,7 @@
 }
 
 body {
-  @apply px-28;
+  @apply px-11;
   color: rgb(var(--foreground-rgb));
   
   background: linear-gradient(

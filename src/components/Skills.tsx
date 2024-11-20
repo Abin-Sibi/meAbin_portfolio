@@ -39,11 +39,11 @@ export default function Skills() {
         <h2 className="text-3xl font-bold text-white">SKILLS</h2>
         <p className="text-white mt-2">I love to learn new technologies.</p>
       </div>
-      <div className="grid md:grid-cols-5 gap-8 max-w-5xl mx-auto">
+      <div className="grid xl:grid-cols-5 lg:grid-cols-4  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 max-w-5xl ">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="w-40 h-auto bg-gradient-to-r from-purple-950 to-purple-600 shadow-xl shadow-purple-950 rounded-[35px] flex flex-col items-center justify-center p-6 transition-transform duration-300 transform hover:scale-105"
+            className="w-40 h-auto bg-gradient-to-r from-purple-950 to-purple-600 shadow-xl shadow-purple-950 rounded-[35px] flex flex-col items-center justify-center p-6 transition-transform duration-300 transform hover:scale-105 mx-auto"
           >
             <img src={skill.icon} alt={skill.name} className="w-13 h-13 mb-4 border border-white rounded-[30px] px-1 py-3" />
             <p className="text-lg font-medium text-white">{skill.name}</p>

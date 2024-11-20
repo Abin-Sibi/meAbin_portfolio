@@ -4,7 +4,7 @@ import { FaTimes } from 'react-icons/fa';
 
 const Modal = ({ project, onClose }: { project: any; onClose: () => void }) => {
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+    <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50 mx-2">
       <div className="bg-gray-800 rounded-lg shadow-lg p-8 max-w-3xl w-full relative">
         <button onClick={onClose} className="absolute top-4 right-4 text-white">
           <FaTimes className="h-6 w-6" />
